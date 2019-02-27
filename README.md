@@ -29,8 +29,8 @@ Testing
 This module is tested by using ansible directly. 
 
 	git clone https://github.com/ns1/ns1-ansible-modules.git
-	cd ns1-ansible-module
-	ansible -i local, test.yml --extra-vars key=<your ns1 api key> --extra-vars debug=yes --extra-vars test_zone=<a zone you have at ns1>
+	cd ns1-ansible-modules
+	ansible-galaxy -i local, test.yml --extra-vars key=<your ns1 api key> --extra-vars debug=yes --extra-vars test_zone=<a zone you have at ns1>
 
 The debug flag is optional. You can use any test zone to get started, the only requirement is that it's not yet defined on the NS1 platform. That is, you do not need to make the zone authoritative through your registrar for the ansible module to work correctly.
 
